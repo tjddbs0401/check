@@ -36,10 +36,10 @@ A table at the top for quick reference information, later used for indexing.
 
 |   |  |
 | -- | -- |
-| Software | [A link to the Longhorn’s repository.](https://github.com/longhorn/longhorn) |
-| Security Provider | No |
-| Languages | Python, Shell, Mustache |
-| SBOM | https://longhorn.io/docs/1.5.3/deploy/install/ |
+| **Software** | [A link to the Longhorn’s repository.](https://github.com/longhorn/longhorn) |
+| **Security Provider** | No |
+| **Languages** | <ul><li>Python</li><li>Shell</li><li>Mustache</li></ul>|
+| **SBOM** | https://longhorn.io/docs/1.5.3/deploy/install/ |
 | | |
 
 ### Security links

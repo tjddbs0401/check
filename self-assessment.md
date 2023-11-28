@@ -107,7 +107,11 @@ Longhorn's placement within the cloud-native ecosystem is characterised by its f
 
 ## Self-assessment use
 
-This section serves to inform Longhorn users and contributors about its security practices, as well as to assist CNCF TAG-Security in their joint assessment for incubation phase projects. Firstly, we explore the threats using the STRIDE model. Then, we explore using the lightweight threat modelling. Finally, we see an example attack tree. These steps were helpful in creating the subsequent sections in our assessment.
+This self-assessment is created by the Longhorn team to perform an internal analysis of the project's security. It is not intended to provide a security audit of Longhorn, or function as an independent assessment or attestation of Longhorn's security health.
+
+This document serves to provide Longhorn users with an initial understanding of Longhorn's security, where to find existing security documentation, Longhorn plans for security, and general overview of Longhorn security practices, both for development of Longhorn as well as security of Longhorn.
+
+This document provides the CNCF TAG-Security with an initial understanding of Longhorn to assist in a joint-assessment, necessary for projects under incubation. Taken together, this document and the joint-assessment serve as a cornerstone for if and when Longhorn seeks graduation and is preparing for a security audit.
 
 <details>
 

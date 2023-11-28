@@ -36,11 +36,10 @@ A table at the top for quick reference information, later used for indexing.
 
 |   |  |
 | -- | -- |
-| **Software** | [A link to the Longhorn’s repository.](https://github.com/longhorn/longhorn) |
-| **Security Provider** | No |
-| **Languages** | <ul><li>Python</li><li>Shell</li><li>Mustache</li></ul>|
-| **SBOM** | https://longhorn.io/docs/1.5.3/deploy/install/ 
-https://github.com/cncf/devstats/blob/master/grafana/dashboards/longhorn/dashboards.json|
+| Software | [A link to the Longhorn’s repository.](https://github.com/longhorn/longhorn) |
+| Security Provider | No |
+| Languages | Python, Shell, Mustache |
+| SBOM | https://longhorn.io/docs/1.5.3/deploy/install/ |
 | | |
 
 ### Security links
@@ -61,7 +60,7 @@ Longhorn is a cloud-native, distributed block storage system for Kubernetes. It 
 Longhorn is a cloud-native distributed block storage system designed to run on Kubernetes. It is particularly engineered to provide persistent storage for stateful applications running in Kubernetes clusters. In cloud-native architectures, persistence, resilience, and scalability are critical challenges due to the ephemeral nature of containerised workloads. Longhorn addresses these challenges by turning distributed block storage into a micro-service, managed by Kubernetes, making it highly available and resilient.
 
 
-<p align="center"><img width="540" alt="image" src="https://github.com/Makesh-Srinivasan/ISP_A3/assets/66047630/8e9e94c2-b507-474e-8bd1-7773a62344e7"></p>
+<p align="center"><img width="600" alt="image" src="https://github.com/Makesh-Srinivasan/ISP_A3/assets/66047630/8e9e94c2-b507-474e-8bd1-7773a62344e7"></p>
 
 
 * Pods and Volumes: Longhorn integrates with Kubernetes through volumes presented to pods. These volumes are dynamically provisioned by Longhorn as per the demands of the pods, which could be running various workloads such as databases, CMS, or any stateful application.
@@ -116,22 +115,13 @@ Longhorn's placement within the cloud-native ecosystem is characterised by its f
 
 ## Self-assessment use
 
-This self-assessment is created by the [project] team to perform an internal analysis of the
-project's security.  It is not intended to provide a security audit of [project], or
-function as an independent assessment or attestation of [project]'s security health.
-
-This document serves to provide [project] users with an initial understanding of
-[project]'s security, where to find existing security documentation, [project] plans for
-security, and general overview of [project] security practices, both for development of
-[project] as well as security of [project].
-
-This document provides the CNCF TAG-Security with an initial understanding of [project]
-to assist in a joint-assessment, necessary for projects under incubation.  Taken
-together, this document and the joint-assessment serve as a cornerstone for if and when
-[project] seeks graduation and is preparing for a security audit.
-
 Light Weight Threat Modelling:
 This [document](https://github.com/Rana-KV/tag-security/issues/27#issuecomment-1826412654) serves to inform Longhorn users and contributors about its security practices, as well as to assist CNCF TAG-Security in their joint assessment for incubation phase projects.
+
+The attact tree for a generic high-level threat scenario is depicted:
+<p align="center"><img alt="image" src="https://github.com/Makesh-Srinivasan/ISP_A3/assets/66047630/4f88f24c-14e9-40c1-92e5-ea3761806556"></p>
+
+Each branch of this tree represents a step or method an attacker might use to progress their attack. The end goal is unauthorized access to and exfiltration of sensitive data stored within Longhorn. This attack tree can be used to identify potential vulnerabilities, assess risks, and develop strategies to mitigate or prevent such attacks.
 
 
 ## Security functions and features
@@ -206,7 +196,4 @@ Case Studies
 * Case studies detailing real-world usage of Longhorn can provide valuable insights into its effectiveness and reliability. While specific case studies are not listed here, they would typically cover scenarios such as disaster recovery, handling high-volume traffic, and data migration in multi-cluster Kubernetes environments.
 
 Related Projects / Vendors
-* Longhorn is often compared to other CNCF projects or cloud-native storage solutions such as Rook, OpenEBS, and Portworx.
-* Especially Rook is often the most compared with Longhorn since both are Kubernetes-native. Rook is an open-source cloud-native storage utility for Kubernetes that aims to automate some of the tasks of a storage administrator, such as programmatic storage, migration, disaster recovery, monitoring, and resource management. Longhorn is valued to be easier to work on from scratch, but Rook is preferred when dealing with larger clusters in PRD.
-* Prospective users are interested in differences in performance, scalability, ease of use, and specific features like snapshotting and backup/restore capabilities.
-
+* Longhorn is often compared to other CNCF projects or cloud-native storage solutions such as Rook, OpenEBS, and Portworx. Prospective users are interested in differences in performance, scalability, ease of use, and specific features like snapshotting and backup/restore capabilities.

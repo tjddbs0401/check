@@ -198,4 +198,6 @@ Case Studies
 * Further information can be found [Companies using Longhorn](https://discovery.hgdata.com/product/rancher-longhorn).
 
 Related Projects / Vendors
-* Longhorn is often compared to other CNCF projects or cloud-native storage solutions such as Rook, OpenEBS, and Portworx. Prospective users are interested in differences in performance, scalability, ease of use, and specific features like snapshotting and backup/restore capabilities.
+* Longhorn is often compared to other CNCF projects or cloud-native storage solutions such as Rook, OpenEBS, and Portworx.
+* Especially Rook is often the most compared with Longhorn since both are Kubernetes-native. Rook is an open-source cloud-native storage utility for Kubernetes that aims to automate some of the tasks of a storage administrator, such as programmatic storage, migration, disaster recovery, monitoring, and resource management. Longhorn is valued to be easier to work on from scratch, but Rook is preferred when dealing with larger clusters in PRD.
+* Prospective users are interested in differences in performance, scalability, ease of use, and specific features like snapshotting and backup/restore capabilities.
